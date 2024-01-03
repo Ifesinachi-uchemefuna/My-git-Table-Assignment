@@ -8,36 +8,91 @@
 <body>
 <form action="address" method="post"> 
     <div id=" address">
-       <div> 
-  <label for="first name"> First name </label>
-  <input type="text" required><br>
-        <label for=" last name"> Last Name</label>
-        <input type="text" required><br>
-
-        <label for="street"> Street</label>
-        <input type="text"required><br>
-
-        <label for="city"> City</label>
-        <input type="text" required><br>
-    </div>
-
-    <div id="additional status">
-       <form action="Additional status" method="post">
-
-        <label for="biography" id=" biography"> Biography </label>
-        <input type="text" required> <br>
+     
         
-        <form>
-            <label for="image" id=" image"> Image</label>
-            <input type="file" name="picture"> <br>
-            </form>
-            <label for="age group"> Age Group</label>
-            <select>
-               <option> 0 to 9 Years </option>
-               <option> 10-15  Years </option>
-               <option> 16-20  Years </option>
-               <option> 21-15  Years </option>
-            </select>
+   <fieldset>
+    <legend> Your address</legend>
+    <div> 
+      
+        <label for="first name"> First name </label>
+        <input type="text" required><br>
+              <label for=" last name"> Last Name</label>
+              <input type="text" required><br>
+      
+              <label for="street"> Street</label>
+              <input type="text"required><br>
+      
+              <label for="city"> City</label>
+              <input type="text" required><br>
+      
+          </div>
+
+   </fieldset>
+<fieldset>
+    <legend> Additional details</legend>
+    <div id="additional status">
+        <form action="Additional status" method="post">
+ 
+         <label for="biography" id=" biography"> Biography </label>
+         <input type="text" required> <br>
+         
+         <form>
+             <label for="image" id=" image"> Image</label>
+             <input type="file" name="picture"> <br>
+             </form>
+             <label for="age group"> Age Group</label>
+             <select required>
+                <option> 0 to 9 Years </option>
+                <option> 10-15  Years </option>
+                <option> 16-20  Years </option>
+                <option> 21-15  Years </option>
+             </select>
+            </div>
+</fieldset>
+
+
+   
+
+
+            
+            <div id="interest">
+           <form action=" interest" method="post">
+          <label for="hobbies"> Hobbies</label>
+          <select name="hobbies" multiple> <br>
+          <option> playing soccer</option>
+          <option> Dancing</option>
+          <option> Gardening</option>
+          <option> Watching movies</option> 
+          </select>
+
+
+<div>    
+     <label for="favorite car"> Favourite car?</label>
+    <select>
+       <option>volvo</option>
+       <option>Toyota</option>
+       <option>Honda</option>
+       <option>Nissan</option>
+   
+    </select>
+</div>
+       
+<div id="Transport">
+    <form action=" Transport" method="post">
+   <label for="Favourite public transport "> Favourite public transport? /label>
+   <select name="Favourite public transport" multiple> <br>
+   <option> Train</option>
+   <option> bus</option>
+
+   <option> boat</option>
+   
+   <option> aeroplane</option> 
+   </select>
+
+
+           </form>
+            </div>
+
 
 
        </form>
